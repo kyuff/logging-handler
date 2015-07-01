@@ -1,6 +1,8 @@
 Proof of concept project to do logging through a socket to nxlog
 
-== Wildfly Configuration ==
+Wildfly Configuration
+=====================
+
         <subsystem xmlns="urn:jboss:domain:logging:2.0">
             [...]
 
@@ -25,7 +27,8 @@ Proof of concept project to do logging through a socket to nxlog
              [...]
        </subsystem>
 
-== Installation of the Module ==
+Installation of the Module
+==========================
 
 The Maven project will build a file called logging-handler-${project.version}-wildfly-module.zip
 
