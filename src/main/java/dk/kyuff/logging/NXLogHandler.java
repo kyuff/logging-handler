@@ -6,7 +6,6 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.net.ConnectException;
 import java.net.Socket;
 import java.net.SocketException;
 import java.util.Queue;
@@ -23,7 +22,7 @@ public class NXLogHandler extends Handler {
     private static final ObjectMapper mapper = new ObjectMapper();
 
     // Used to instantiate the scheduling
-    private final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
+    private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
 
     private int port;
     private String host;
